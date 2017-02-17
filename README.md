@@ -1,6 +1,7 @@
 # Quilljs::Rails
 
-This gem adds a Quill rich editor to an existing text field or text area
+This gem adds a Quill rich editor to an existing text field or text area.
+[Quill - Your powerful, rich text editor](http://quilljs.com/)
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -28,20 +29,21 @@ Add these lines in the head section of application.html.erb
 Then add this line to your application.js file
 
 ```ruby
-//= require quill.global
+  //= require quill.global
 ```
 
-Add the class ```quill_container``` to the desired text_field or text_area
+Add the class `quill_container` to the desired text_field or text_area
 
-Eg. with ```bootstrap_form_for```,
+Eg. with `bootstrap_form_for`,
 
-    <%= f.text_field :title, label: 'Title', :type => "text", class: 'quill_container' %>
+    <%= f.text_field :title, label: 'Title', type: 'text', class: 'quill_container' %>
 
-With ```Simple form```,
+With `Simple form`,
 
     <%= f.input :title, input_html: { class: 'quill_container' } %>
 
 Quilljs loads with these defaults :-
+
 ```javascript
 
         theme: 'snow',
@@ -61,7 +63,8 @@ Quilljs loads with these defaults :-
 
 In order to customize your defaults, this gem comes with a global javascript object. You can 
 setup the global object(in a js file) like this :-
-```javascript 1.8
+
+```javascript
 var defaults = {
         theme: 'snow',
         modules: {
@@ -96,9 +99,11 @@ remove other quill themes and add
 
     *= require quill.bubble
     
-Make sure to add ```theme: 'bubble'``` in the ```Quilljs.setDefaults``` setting as explained above.
+Make sure to add `theme: 'bubble'` in the `Quilljs.setDefaults` setting as explained above.
 
-This gem also comes with the latest ```quill.min.js``` and ```quill.core.js```.
+This gem also comes with the latest `quill.min.js` and `quill.core.js`.
+
+This gem can also be used in conjuction with [bootstrap maxlength](https://mimo84.github.io/bootstrap-maxlength/).
 ## Development
 
 
