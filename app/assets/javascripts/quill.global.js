@@ -83,7 +83,7 @@
                 }, 500);
 
 
-            var quill_container = $('.rich_area');
+            var quill_container = $('.quill_container');
             if (quill_container.length > 0) {
                 quill_container.each(function (index, object) {
                     return create_quill_containers(index, object)
