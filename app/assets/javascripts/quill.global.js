@@ -34,7 +34,7 @@
             var create_quill_containers = function(index, input_field) {
                     var current_quill_container = create_quill_container(input_field, input_field.id + '-quill');
                     var placeholder = ''; // Field's placeholder, to be shown on the Quill when empty.
-                    if($(input_field).attr('placeholder').length > 0)
+                    if($(input_field).hasAttribute('placeholder'))
                     {
                         settings.placeholder = $(input_field).attr('placeholder');
                     }
