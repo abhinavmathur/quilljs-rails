@@ -1,5 +1,8 @@
 # Quilljs::Rails
 
+[![Gem Version](https://badge.fury.io/rb/quilljs-rails.svg)](https://badge.fury.io/rb/quilljs-rails)
+[![Gem](https://img.shields.io/gem/dt/quilljs-rails.svg)](https://rubygems.org/gems/quilljs-rails)
+
 This gem adds a Quill rich editor to an existing text field or text area.
 [Quill - Your powerful, rich text editor](http://quilljs.com/)
 ## Installation
