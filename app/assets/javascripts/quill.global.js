@@ -1,6 +1,8 @@
 /**
  * Created by Abhinav Mathur on 16/02/17.
+ * Updated on 02/04/17
  */
+
 (function(){
 
     var defaults = {
@@ -33,9 +35,8 @@
 
             var create_quill_containers = function(index, input_field) {
                     var current_quill_container = create_quill_container(input_field, input_field.id + '-quill');
-                    var placeholder = ''; // Field's placeholder, to be shown on the Quill when empty.
-                    if($(input_field).hasAttribute('placeholder'))
-                    {
+                    var placeholder_attr = $(input_field).attr('placeholder');
+                    if (typeof placeholder_attr !== typeof undefined && placeholder_attr !== false) {
                         settings.placeholder = $(input_field).attr('placeholder');
                     }
 
