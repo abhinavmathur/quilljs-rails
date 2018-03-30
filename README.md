@@ -107,6 +107,13 @@ Make sure to add `theme: 'bubble'` in the `Quilljs.setDefaults` setting as expla
 This gem also comes with the latest `quill.min.js` and `quill.core.js`.
 
 This gem can also be used in conjuction with [bootstrap maxlength](https://mimo84.github.io/bootstrap-maxlength/).
+
+### Common questions
+
+#### How to access individual quill editors if there are many quill editors on one single page?
+
+Starting from the top of the page, each quill editor instance is attached to the window object. The first quill editor instance can be accessed by `window['quill-container-0']` and the second one by `window['quill-container-1']` and so on.
+
 ## Development
 
 
