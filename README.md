@@ -10,16 +10,12 @@ This gem adds a Quill rich editor to an existing text field or text area.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'quilljs-rails'
+gem 'quilljs-rails', :git => 'git://github.com/abhinavmathur/quilljs-rails.git'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install quilljs-rails
 
 
 ## Usage
